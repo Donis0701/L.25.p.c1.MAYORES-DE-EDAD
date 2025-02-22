@@ -1,5 +1,5 @@
-export default class Persona {
-    constructor(nombre, edad) {
+export default class cl_mPersona {
+    constructor({nombre, edad}) {
         this._nombre = nombre;
         this._edad = edad;
     }
@@ -10,7 +10,7 @@ export default class Persona {
         return this._nombre;
     }
     set edad(e) {
-        this._edad = e;
+        this._edad =+e;
     }
     get edad() {
         return this._edad;

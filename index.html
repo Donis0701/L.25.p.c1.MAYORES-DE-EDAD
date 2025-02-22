@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="salida"></div>
-    <script src="principal.js" type="module"></script>
+    <section id="personaForm">
+        <h3>Conteo de personas mayores</h3>|    
+        <input type="text" id="personaForm_inNombre" placeholder="Nombre" />
+        <input type="text" id="personaForm_inEdad" placeholder="Edad" />
+        <button id="personaForm_btProcesar">Procesar</button>
+    </section>
+    <section id="mainForm">
+        <h3>Resultados del conteo</h3>
+        <p>Total de personas: <span id="mainForm_lbltotalPersonas"></span></p>
+        <p>Personas mayores de edad: <span id="mainForm_lblpersonaMayorEdad"></span></p>
+        <p>Porcentaje de personas mayores de edad: <span id="mainForm_lblporcentajeMayores"></span></p>
+    </section>
 </body>
+<script type="module">
+    import cl_principal from './js/principal.js'
+    new cl_principal();
+</script>
 </html>

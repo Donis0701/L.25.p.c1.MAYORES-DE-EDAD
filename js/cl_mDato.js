@@ -10,4 +10,10 @@ export default class Dato {
     porcentajeMayores(){
         return (this.cntMayores / this.cntPersonas) * 100;
     }
+    personaMayorEdad(){
+        return this.cntMayores;
+    }
+    totalPersonas(){
+        return this.cntPersonas;
+    }
 }
